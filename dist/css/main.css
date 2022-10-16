@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: Poppins, Tahoma, sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: url(../assets/images/bg-intro-mobile.png) center/cover no-repeat hsl(0deg, 100%, 74%);
+}
+@media (min-width: 720px) {
+  body {
+    background: url(../assets/images/bg-intro-desktop.png) center/cover no-repeat hsl(0deg, 100%, 74%);
+  }
+}
+
+@media (min-width: 760px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80vw;
+  }
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  margin: 2rem;
+}
+@media (min-width: 760px) {
+  .hero {
+    display: grid;
+    place-content: center;
+    text-align: left;
+  }
+}
+.hero__title {
+  font-size: clamp(1.25rem, 2vw + 1.5rem, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.hero__desc {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.cards {
+  margin-inline: 1.5rem;
+}
+
+.promo {
+  background: hsl(248deg, 32%, 49%);
+  border-radius: 0.7rem;
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.2);
+}
+.promo__details {
+  line-height: 1.5;
+  text-align: center;
+  padding-block: 1rem;
+  padding-inline: 20%;
+  color: rgba(255, 255, 255, 0.756);
+  font-weight: 400;
+}
+.promo__details--highlight {
+  color: white;
+  font-weight: 700;
+}
+@media (min-width: 760px) {
+  .promo__details {
+    padding-inline: 0;
+  }
+}
+
+.form__card {
+  margin-top: 1.5rem;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 0.7rem;
+  padding: 2.25rem 2rem;
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.2);
+}
+.form__card input,
+.form__card button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 3.5rem;
+  margin-top: 1.25rem;
+  border-radius: 0.4rem;
+}
+.form__card input:first-child {
+  margin-top: 0;
+}
+.form__card input {
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: 1px solid rgb(218, 218, 218);
+  padding-inline: 1rem;
+  outline: none;
+}
+.form__card input::placeholder {
+  color: hsl(249deg, 10%, 26%);
+}
+.form__card input:active, .form__card input:focus {
+  border-color: hsl(248deg, 32%, 49%);
+}
+.form__card input.warning--input {
+  border-color: hsl(0deg, 100%, 74%);
+  border-width: 2px;
+  background: url(../assets/images/icon-error.svg) 95% center/auto no-repeat;
+}
+.form__card input.warning--input::placeholder {
+  opacity: 0;
+}
+.form__card button {
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  background: hsl(154deg, 59%, 51%);
+  box-shadow: 0 5px 0 0 hsl(154deg, 70%, 32%);
+  transition: all ease 600ms;
+}
+.form__card button:hover, .form__card button:focus {
+  cursor: pointer;
+  background: hsl(154deg, 54%, 67%);
+}
+
+.form__services {
+  padding-inline: 1rem;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 1.5;
+  color: rgba(91, 91, 91, 0.756);
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.form__services--highlight {
+  text-decoration: unset;
+  font-weight: 700;
+  color: hsl(0deg, 100%, 74%);
+}
+
+.warning-fName, .warning-lName, .warning-email, .warning-password {
+  text-align: right;
+  color: hsl(0deg, 100%, 74%);
+  font-style: italic;
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin-block: 0.5rem;
+}
+.warning-fName.hidden, .warning-lName.hidden, .warning-email.hidden, .warning-password.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

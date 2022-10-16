@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+
+  <main>
+    <header class="hero">
+      <h1 class="hero__title ">Learn to code by watching others</h1>
+      <p class="hero__desc">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </header>
+    <section class="cards">
+      <div class="promo">
+        <p class="promo__details"><span class="promo__details--highlight">Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+      <form action="#" 
+            class="form__card">
+        <input type="text" name="fName" id="fName" placeholder="First Name"></input>
+        <p class="warning-fName hidden">
+          First Name cannot be empty
+        </p>
+        <input type="text" name="lName" id="lName" placeholder="Last Name"></input>
+        <p class="warning-lName hidden">
+          Last Name cannot be empty
+        </p>
+        <input type="email" name="email" id="email" placeholder="Email Address"></input>
+        <p class="warning-email hidden">
+          Looks like this is not an email
+        </p>
+        <input type="password" name="password" id="password" placeholder="Password"></input>
+        <p class="warning-password hidden">
+          Password cannot be empty
+        </p>
+        <button class="form__btn" type="submit">Claim your free trial</button>
+        <p class="form__services">By clicking the button, you are agreeing to our <a href="" class="form__services--highlight">Terms and Services</a></p>
+      </form>
+    </section>
+  </main>
+  
+</body>
+<script src="./js/app.js"></script>
+</html>
