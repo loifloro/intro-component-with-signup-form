@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/loifloro/intro-component-with-signup-form)
+- Live Site URL: [Github Pages](https://loifloro.github.io/intro-component-with-signup-form/dist/)
 
 ## My process
 
